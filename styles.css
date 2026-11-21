@@ -134,6 +134,22 @@ h1 {
   color: var(--muted);
 }
 
+.project-video { margin: 0; }
+
+.project-video iframe {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+}
+
+.project-video figcaption {
+  margin-top: .75rem;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
 .project h2 { margin: 0; font-size: clamp(1.75rem, 4vw, 3rem); letter-spacing: -.045em; }
 .project p { margin: .75rem 0 0; color: var(--muted); line-height: 1.6; }
 
