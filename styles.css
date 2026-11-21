@@ -124,6 +124,8 @@ h1 {
   border: 1px solid var(--line);
 }
 
+.project-image { height: auto; }
+
 .project-placeholder {
   display: grid;
   place-items: center;
