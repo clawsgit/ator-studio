@@ -3,121 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ator Studio portfolio. Selected work coming soon.">
-  <meta name="theme-color" content="#171913">
+  <meta name="description" content="Personal projects and independent work by Ator Studio.">
+  <meta name="theme-color" content="#000">
   <title>Ator Studio — Portfolio</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      font-family: "Segoe UI", system-ui, sans-serif;
-      color: #f2f1e8;
-      background: #171913;
-      --muted: #babdb0;
-      --accent: #def68a;
-      --line: #42473a;
-    }
-
-    * { box-sizing: border-box; }
-
-    body { margin: 0; }
-
-    a { color: inherit; text-underline-offset: .25em; }
-    a:hover { color: var(--accent); }
-    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
-
-    .page { width: min(100% - 3rem, 82rem); margin-inline: auto; }
-
-    header, footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding-block: 1.3rem;
-      font-size: .9rem;
-    }
-
-    header { border-bottom: 1px solid var(--line); }
-    footer { border-top: 1px solid var(--line); color: var(--muted); }
-
-    .wordmark { font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.15fr 1fr;
-      align-items: center;
-      gap: clamp(2rem, 6vw, 6rem);
-      padding-block: clamp(3rem, 8vw, 7rem);
-    }
-
-    .label {
-      margin: 0 0 1.25rem;
-      color: var(--accent);
-      font-size: .875rem;
-      font-weight: 650;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(4rem, 10vw, 9rem);
-      font-weight: 750;
-      line-height: .82;
-      letter-spacing: -.085em;
-    }
-
-    .lead { color: var(--muted); margin: 2rem 0 0; font-size: 1.2rem; line-height: 1.5; }
-
-    .art {
-      display: grid;
-      place-items: center;
-      min-width: 0;
-      aspect-ratio: 5 / 4;
-      overflow: hidden;
-      border: 1px solid #555f3e;
-      background:
-        linear-gradient(90deg, #d9f37e20 1px, transparent 1px) center / 8% 10%,
-        linear-gradient(#d9f37e20 1px, transparent 1px) center / 8% 10%,
-        radial-gradient(ellipse at 70% 15%, #4f6130, #232b1a 58%, #181e13);
-    }
-
-    .orb {
-      width: 53%;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: radial-gradient(circle at 32% 26%, #fbffdf, #dcf66d 19%, #97b63b 37%,
-        #4d651d 55%, #252f11 68%, #b6d64e 88%);
-      box-shadow: inset 0 0 0 1px #e5f4a15c, 0 1.25rem 3rem #111509;
-    }
-
-    .work {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: baseline;
-      gap: 1rem;
-      border-top: 1px solid var(--line);
-      padding-block: 2rem 3.5rem;
-    }
-
-    .work h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin: 0; letter-spacing: -.055em; }
-    .work p { color: var(--muted); margin: 0; line-height: 1.6; }
-
-    @media (max-width: 44rem) {
-      .page { width: calc(100% - 2rem); }
-      .hero, .work { grid-template-columns: 1fr; }
-      .hero { padding-block: 3.5rem 2rem; }
-      .work { padding-block: 1.5rem 2.5rem; }
-      .art { aspect-ratio: 16 / 10; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page" id="top">
     <header>
-      <span class="wordmark">ator.studio</span>
+      <a class="wordmark" href="./" aria-label="ATOR home">ATOR</a>
       <nav aria-label="Main">
-        <a href="#work">Work</a>
+        <a href="#work">Personal Work</a>
+        <a href="college-work.html">College Work</a>
       </nav>
     </header>
     <main>
@@ -125,14 +22,14 @@
         <div>
           <p class="label">Portfolio</p>
           <h1 id="title">Ator<br>Studio</h1>
-          <p class="lead">Selected work coming soon.</p>
+          <p class="lead">Personal projects and independent work.</p>
         </div>
         <div class="art" aria-hidden="true"><div class="orb"></div></div>
       </section>
       <section class="work" id="work" aria-labelledby="work-title">
-        <h2 id="work-title">Selected work</h2>
+        <h2 id="work-title">Personal Work</h2>
         <!-- Replace the launch note with project titles, images, and case study links. -->
-        <p>Project descriptions and images will be added here as the portfolio takes shape.</p>
+        <p>Personal projects coming soon.</p>
       </section>
     </main>
     <footer>
